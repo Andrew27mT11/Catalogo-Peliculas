@@ -1,0 +1,45 @@
+﻿body {
+    background-color: #1D1D1D;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.white-bg {
+    background-color: #3B3B3B;
+}
+
+#peliculas-container {
+    color: white;
+}
+#peliculas-container img {
+     max-width: 100%;
+    }
+
+#peliculas-container p {
+     text-align: center;
+     color: white; /* Cambia el color del texto a negro */
+}
+
+#peliculas-container {
+    display: flex;
+    justify-content: space-between; 
+}
+#peliculas-container-segunda-fila {
+    display: flex;
+    justify-content: space-between; 
+}
+.img-zoom {
+    transition: transform 0.2s; 
+}
+.img-zoom:hover {
+        transform: scale(1.1); 
+    }
+#peliculas-container-segunda-fila p {
+    text-align: center;
+}
+
+/* Estilos personalizados para el título */
+h1.text-center {
+    text-align: center;
+}
+

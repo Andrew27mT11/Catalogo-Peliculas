@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="tiusr30pl_PeliculasProgra11ModelStoreContainer" CdmEntityContainer="tiusr30pl_PeliculasProgra11Entities">
+    <EntitySetMapping Name="ActoresStaff">
+      <EntityTypeMapping TypeName="tiusr30pl_PeliculasProgra11Model.ActoresStaff">
+        <MappingFragment StoreEntitySet="ActoresStaff">
+          <ScalarProperty Name="ActorStaffID" ColumnName="ActorStaffID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="PaginaWeb" ColumnName="PaginaWeb" />
+          <ScalarProperty Name="Facebook" ColumnName="Facebook" />
+          <ScalarProperty Name="Instagram" ColumnName="Instagram" />
+          <ScalarProperty Name="Twitter" ColumnName="Twitter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CalificacionesExpertos">
+      <EntityTypeMapping TypeName="tiusr30pl_PeliculasProgra11Model.CalificacionesExpertos">
+        <MappingFragment StoreEntitySet="CalificacionesExpertos">
+          <ScalarProperty Name="PeliculaID" ColumnName="PeliculaID" />
+          <ScalarProperty Name="ExpertoID" ColumnName="ExpertoID" />
+          <ScalarProperty Name="Calificacion" ColumnName="Calificacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comentarios">
+      <EntityTypeMapping TypeName="tiusr30pl_PeliculasProgra11Model.Comentarios">
+        <MappingFragment StoreEntitySet="Comentarios">
+          <ScalarProperty Name="ComentarioID" ColumnName="ComentarioID" />
+          <ScalarProperty Name="PeliculaID" ColumnName="PeliculaID" />
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+          <ScalarProperty Name="FechaComentario" ColumnName="FechaComentario" />
+          <ScalarProperty Name="RespuestaAComentarioID" ColumnName="RespuestaAComentarioID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estado">
+      <EntityTypeMapping TypeName="tiusr30pl_PeliculasProgra11Model.Estado">
+        <MappingFragment StoreEntitySet="Estado">
+          <ScalarProperty Name="EstadoID" ColumnName="EstadoID" />
+          <ScalarProperty Name="NombreEstado" ColumnName="NombreEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExpertosEnCalificaciones">
+      <EntityTypeMapping TypeName="tiusr30pl_PeliculasProgra11Model.ExpertosEnCalificaciones">
+        <MappingFragment StoreEntitySet="ExpertosEnCalificaciones">
+          <ScalarProperty Name="ExpertoID" ColumnName="ExpertoID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="codigoexperto" ColumnName="codigoexperto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Peliculas">
+      <EntityTypeMapping TypeName="tiusr30pl_PeliculasProgra11Model.Peliculas">
+        <MappingFragment StoreEntitySet="Peliculas">
+          <ScalarProperty Name="PeliculaID" ColumnName="PeliculaID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Resena" ColumnName="Resena" />
+          <ScalarProperty Name="CalificacionGenerQal" ColumnName="CalificacionGenerQal" />
+          <ScalarProperty Name="FechaLanzamiento" ColumnName="FechaLanzamiento" />
+          <ScalarProperty Name="PosterID" ColumnName="PosterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posters">
+      <EntityTypeMapping TypeName="tiusr30pl_PeliculasProgra11Model.Posters">
+        <MappingFragment StoreEntitySet="Posters">
+          <ScalarProperty Name="PosterID" ColumnName="PosterID" />
+          <ScalarProperty Name="NombreArchivo" ColumnName="NombreArchivo" />
+          <ScalarProperty Name="RutaArchivo" ColumnName="RutaArchivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rol">
+      <EntityTypeMapping TypeName="tiusr30pl_PeliculasProgra11Model.Rol">
+        <MappingFragment StoreEntitySet="Rol">
+          <ScalarProperty Name="RolID" ColumnName="RolID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RolesEnPelicula">
+      <EntityTypeMapping TypeName="tiusr30pl_PeliculasProgra11Model.RolesEnPelicula">
+        <MappingFragment StoreEntitySet="RolesEnPelicula">
+          <ScalarProperty Name="RolEnPeliculaID" ColumnName="RolEnPeliculaID" />
+          <ScalarProperty Name="RolID" ColumnName="RolID" />
+          <ScalarProperty Name="ActorStaffID" ColumnName="ActorStaffID" />
+          <ScalarProperty Name="IDPelic" ColumnName="IDPelic" />
+          <ScalarProperty Name="OrdenAparicion" ColumnName="OrdenAparicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="tiusr30pl_PeliculasProgra11Model.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+          <ScalarProperty Name="IDEstado" ColumnName="IDEstado" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="TokenExpiracion" ColumnName="TokenExpiracion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
